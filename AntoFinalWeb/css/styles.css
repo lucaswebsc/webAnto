@@ -1,0 +1,399 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  
+}
+/* PALETA DE COLORES 
+  #273A73
+  #304673
+  #3E8C8C
+  #39401F
+  #D9C5B4
+*/
+#header {
+   opacity: 75%;
+   position: absolute;
+   z-index: 1;
+  
+}
+.navbar {
+  background-color: #273A73;
+ 
+}
+.nav-link {
+  color: white;
+} 
+
+#perfil {
+  padding-top: 150px;
+  }
+.divperfil {
+opacity: 0;
+      transform: translateY(20px);
+      animation: divperfil 2s ease-out forwards;
+  }
+   @keyframes divperfil {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+       }
+.contenedorcircular {
+    width: 50vw;              /* Responsive: 50% del ancho de la pantalla */
+    max-width: 300px;         /* Límite máximo */
+    aspect-ratio: 1 / 1;   /*     Mantiene forma cuadrada (1:1) */
+    border-radius: 50%;       /* Hace el círculo */
+  /* overflow: hidden;             Oculta bordes sobrantes 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);*/
+  }
+
+.hamburguesabg {
+  background-color: white;
+}
+
+.logo {
+  color: white;
+}
+  .contenedorcircular  {
+    background-image: url(../img/FotoPerfilAnto.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+   .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 4s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+   }
+
+  img {
+    width: 100%;
+    height: 100%;
+     /* object-fit: cover;       Hace que la imagen cubra todo el círculo */
+    display: block;
+  }
+  .botonperfil {
+    
+    margin: 50px 0px;
+    text-decoration-line: none;
+    color: white;
+    background-color:#3E8C8C;
+    border-radius: 15px;
+    width: 250px;
+    height: 50px;
+}  
+/* #galeriaprimera {
+display: flex;
+ width: 600px;    
+height: 430px;
+}
+#galeriaprimera img {
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+  #galeriaprimera img:hover {
+  ursor: crosshair;
+  width: 300px;
+  opacity: 1;
+   filter: contrast(120%);  
+}    */
+ 
+h2 {
+  
+}
+
+#presentacion {
+ margin: 100px 0px; 
+}
+.h2sobremi {
+  padding-top: 100px;
+}
+#trabajos {
+padding-top: 100px;
+}
+  /* .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+  }  */
+
+
+.botontrabajos {
+  background-color: #D9C5B4;
+}
+.seccioonfrase {
+  margin: 250px 0px;
+}
+
+
+#contacto {
+  margin: 150px 0px;
+   
+}
+.h2contacto {
+ padding: 20%;
+
+} 
+
+/* FORMULARIO DE CONTACTO  
+  
+.formulariodecontacto {
+  margin: auto;
+  background-color: rgb(73, 75, 76); 
+  width: 90%;
+  max-width: 600px;
+  border-radius: 1em;
+  padding: 3.5em 1.5em;
+
+ 
+}
+.inputcontainer {
+  width: 100%;  
+  display: flex;
+  flex-direction: column;
+  
+   display: grid;
+  gap: 1em;
+  grid-auto-columns: 100%;  
+}
+
+.formtitle {
+  text-align: center;
+  font-size: 1.9rem;
+   margin-bottom: .4rem;  
+}
+
+
+
+.form_input {
+font-family: inherit;
+font-size:  1rem;
+ padding: .8em 1em;  
+outline: none;
+border: none;
+border: 1px solid #bbb0b0;
+border-radius: 0.2em;
+}
+
+.form_input--message {
+  resize: none;
+  padding: 1.8em 1em;
+  margin-bottom: .5em;  
+}
+
+.enviarctc {
+    width: 150px;  
+  font-family: inherit;
+  background-color: #b108e0;
+  color: #fff;
+   border: none; 
+    padding: .7em 0;  
+ 
+  border-radius: 15px;  
+   border-top-left-radius: -30px;
+  border-bottom-left-radius: -30px;    
+  cursor: pointer;
+  font-weight: 400;
+}
+ */
+
+
+/* .formcontacto {
+
+padding: 25px;
+max-width: 600px;
+display: flex;
+flex-direction: column; 
+ 
+margin: auto;
+border-radius: 10px;
+border: solid black;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+} */
+
+.h2contacto {
+
+}
+#contacto  {
+  margin-top: 150px;
+   margin-bottom: 150px;
+}
+form {
+    margin: 15px;
+    padding: 15px 25px;  
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+     /* border-radius: 20px;   */
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
+   
+    /* width: 340px; */
+}
+.input-group {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column; 
+    text-align: left;  
+    padding: 10px;
+    
+}
+.inputborder {
+  /* border-radius: 15px; */
+}
+label  {
+    color: #283629;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+  width: 95%;
+  
+     padding: 15px 20px; 
+     
+      /* border-radius: 25px  ;    */
+   /* margin-bottom: 20px;
+     background-color: #090512; */
+    /* opacity: 85%; */
+    border: 1px solid #3E8C8C;
+    color: black;
+    /* outline: none; */
+}
+
+input::placeholder, textarea::placeholder {
+    color: #b5cab6;
+}
+
+/* .form-txt {
+ 
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+} */
+
+/* .form-txt a {
+    color: #76b28e;
+    font-size: 14px;
+    font-weight: 600;
+    
+    text-decoration: none;
+}  */
+.btn {
+   
+} 
+.enviarform {
+    margin-top: 25px;
+    text-align: center; 
+    /* width: 135px; */
+  
+    font-size: 16px;
+    color: #FFFFFF;
+    /* border-radius: 25px;   */
+    background-color: #304673;
+    box-shadow: #01102d;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #3E8C8C;
+}
+/* FORMULARIO DE CONTACTO  FIN */
+ 
+.acordionfooter {
+  color: #FFFFFF;
+  background-color: #273A73;
+  border: 1px solid white;
+    
+   
+}
+
+.footerbody {
+
+  background-color:#273A73;
+color: white;
+}
+#acordioncategoria {
+margin: auto;
+width: 200px;
+}
+
+.navfooter {
+
+
+}
+.footernav {
+list-style: none;
+text-decoration: none;
+color: black;
+
+ 
+}
+ 
+.divnavfooter {
+  display: flex;
+  justify-content: center;
+  
+}
+ .divredesfooter {
+  
+   
+  margin-left: -2rem;
+   
+  /* margin-bottom: -1rem; */
+  list-style: none;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  justify-content: space-evenly;  
+}  
+.infofooter {
+  list-style: none;
+  margin-left: -2rem;
+}
+
+
+@media (min-width: 768px) {
+  #perfil {
+    padding-top: 230px;
+    }
+        /* body {
+        padding: 30px;
+    }
+
+    .form {
+        padding: 50px 30px;
+        width: 100%;
+    }
+
+    input {
+        padding: 15px;
+    } */
+
+
+form {
+  margin: 35px;
+    padding: 20px 35px;  
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+   
+   margin: auto;
+     width: 600px; 
+}
+
+
+}
